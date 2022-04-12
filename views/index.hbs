@@ -1,0 +1,36 @@
+
+<header>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src=" width="30" height="30" class="d-inline-block align-top" alt="">
+    Cart
+  </a>
+</nav>
+</header>
+
+<section>
+    <div class="container mt-5">
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each gaming}}
+    <tr>
+      <th scope="row">{{this.number}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.description}}</td>
+      <td> <img src="{{this.image}}" alt=""> </td>
+    </tr>
+     {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
